@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  color: #333;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body,
+#root,
+#main {
+  height: 100%;
+}
+
+img {
+  display: none;
+}
+
+body {
+  background-image: url("/grass-bg.1f7aa2b1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#title {
+  font-size: 100px;
+  color: white;
+  font-weight: bold;
+  font-family: "Arial Black", Gadget, sans-serif;
+  margin-bottom: 40px;
+}
+
+#score {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#start {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  margin-top: 15px;
+}
+
+#grid {
+  width: 500px;
+  height: 500px;
+  border: none;
+  border-radius: 5px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.grid-cell {
+  border: 1px solid black;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: none;
+  outline: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#end {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  border-color: green;
+}
+
+.hide-background {
+  background-image: none !important;
+}
+
+.dizzy {
+  background-image: url("/dizzy.73f07a49.jpg") !important;
+}
+
+.mole1 {
+  background-image: url("/mole1.4d4c1f8e.jpg");
+}
+
+.mole2 {
+  background-image: url("/mole2.657da46d.jpg");
+}
+
+.mole3 {
+  background-image: url("/mole3.709d2041.jpg");
+}
+
+.mole4 {
+  background-image: url("/mole4.3880c32a.jpg");
+}
+
+.mole5 {
+  background-image: url("/mole5.d59ee287.jpg");
+}
+
+.mole6 {
+  background-image: url("/mole6.de1288b0.jpg");
+}
+
+.mole7 {
+  background-image: url("/mole7.aeada7d7.jpg");
+}
+
+.mole8 {
+  background-image: url("/mole8.758e635a.jpg");
+}
+
+.mole9 {
+  background-image: url("/mole9.7c94cec0.jpg");
+}
+
+#shadowBox {
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Black w/opacity/see-through */
+  /* border: 3px solid; */
+}
+
+.rainbow {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 50px;
+  font-family: monospace;
+  letter-spacing: 5px;
+}
+.rainbow_text_animated {
+  background: linear-gradient(
+    to right,
+    #6666ff,
+    #0099ff,
+    #00ff00,
+    #ff3399,
+    #6666ff
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
