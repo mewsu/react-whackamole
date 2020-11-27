@@ -96,9 +96,13 @@ class App extends React.Component {
           </div>
         )}
 
-        <button id="start" onClick={this.start.bind(this)}>
-          START
-        </button>
+        <div id="start-container">
+          <span className="dizzy"></span>
+          <button id="start" onClick={this.start.bind(this)}>
+            START
+          </button>
+          <span className="dizzy"></span>
+        </div>
       </div>
     );
   }

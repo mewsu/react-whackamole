@@ -53,7 +53,7 @@ body {
   font-weight: bold;
   border: none;
   background-color: transparent;
-  margin-top: 15px;
+  margin: 5px;
 }
 
 #grid {
@@ -94,6 +94,23 @@ body {
 
 .hide-background {
   background-image: none !important;
+}
+
+#start-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+span {
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
 }
 
 .dizzy {
